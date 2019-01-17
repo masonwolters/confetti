@@ -1,7 +1,9 @@
 import Stage from './lib/stage';
 
-document.addEventListener('DOMContentLoaded', () => {
-  Stage.init({
-    nodeCount: 500,
-  });
-});
+function Confetti(nodeCount=500) {
+	Stage.init({
+		nodeCount
+	})
+}
+
+export default Confetti
